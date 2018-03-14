@@ -1,0 +1,1061 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		763B3C65205830330060B820 /* UniversalPayment */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 763B3C66205830330060B820 /* Build configuration list for PBXAggregateTarget "UniversalPayment" */;
+			buildPhases = (
+				763B3C69205830AD0060B820 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = UniversalPayment;
+			productName = UniversalPayment;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		6AB9372B7C06F41AB6B765B8 /* Pods_payment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22ECE9E3D0D1CE90E7743472 /* Pods_payment.framework */; };
+		763B3C43205755BB0060B820 /* payment.h in Headers */ = {isa = PBXBuildFile; fileRef = 763B3C41205755BB0060B820 /* payment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		763B3C592057A08F0060B820 /* ItemTypeCardCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 763B3C4D2057A08D0060B820 /* ItemTypeCardCollectionReusableView.xib */; };
+		763B3C5C2057A08F0060B820 /* ItemPackageCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 763B3C502057A08D0060B820 /* ItemPackageCollectionReusableView.xib */; };
+		763B3C602057A08F0060B820 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 763B3C542057A08E0060B820 /* Media.xcassets */; };
+		763B3CB0205842EA0060B820 /* ItemAddCardCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 763B3CB2205842EA0060B820 /* ItemAddCardCollectionReusableView.xib */; };
+		763B3CB32058432A0060B820 /* Views.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 763B3CB52058432A0060B820 /* Views.storyboard */; };
+		763B3CE2205844100060B820 /* AditionalServiceCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CDB205844100060B820 /* AditionalServiceCollectionReusableView.swift */; };
+		763B3CE3205844100060B820 /* ItemPagoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CDC205844100060B820 /* ItemPagoTableViewCell.swift */; };
+		763B3CE4205844100060B820 /* DescriptionPackageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CDD205844100060B820 /* DescriptionPackageTableViewCell.swift */; };
+		763B3CE5205844100060B820 /* ItemAddCardCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CDE205844100060B820 /* ItemAddCardCollectionReusableView.swift */; };
+		763B3CE6205844100060B820 /* ItemPackageCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CDF205844100060B820 /* ItemPackageCollectionReusableView.swift */; };
+		763B3CE7205844100060B820 /* PackageTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CE0205844100060B820 /* PackageTypeTableViewCell.swift */; };
+		763B3CE8205844100060B820 /* ItemTypeCardCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CE1205844100060B820 /* ItemTypeCardCollectionReusableView.swift */; };
+		763B3CEB205844200060B820 /* AddNewCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CE92058441F0060B820 /* AddNewCardViewController.swift */; };
+		763B3CEC205844200060B820 /* PayServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CEA2058441F0060B820 /* PayServiceViewController.swift */; };
+		763B3CEF2058443E0060B820 /* ControllerResultDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CEE2058443E0060B820 /* ControllerResultDelegate.swift */; };
+		763B3CF32058444A0060B820 /* PayServicePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CF02058444A0060B820 /* PayServicePresenter.swift */; };
+		763B3CF42058444A0060B820 /* GetBillsBRMPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CF12058444A0060B820 /* GetBillsBRMPresenter.swift */; };
+		763B3CF52058444A0060B820 /* AddNewCardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CF22058444A0060B820 /* AddNewCardPresenter.swift */; };
+		763B3D0F205844630060B820 /* AdditionalServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CF6205844610060B820 /* AdditionalServices.swift */; };
+		763B3D10205844630060B820 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CF7205844610060B820 /* DataManager.swift */; };
+		763B3D11205844630060B820 /* Terms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CF8205844610060B820 /* Terms.swift */; };
+		763B3D12205844630060B820 /* BillingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CF9205844610060B820 /* BillingInfo.swift */; };
+		763B3D13205844630060B820 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CFA205844610060B820 /* User.swift */; };
+		763B3D14205844630060B820 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CFB205844610060B820 /* Response.swift */; };
+		763B3D15205844630060B820 /* UserPassIp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CFC205844610060B820 /* UserPassIp.swift */; };
+		763B3D16205844630060B820 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CFD205844610060B820 /* Information.swift */; };
+		763B3D17205844630060B820 /* AddressComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CFE205844610060B820 /* AddressComponent.swift */; };
+		763B3D18205844630060B820 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3CFF205844610060B820 /* Card.swift */; };
+		763B3D19205844630060B820 /* Addons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D00205844610060B820 /* Addons.swift */; };
+		763B3D1A205844630060B820 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D01205844610060B820 /* Result.swift */; };
+		763B3D1B205844630060B820 /* Statements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D02205844610060B820 /* Statements.swift */; };
+		763B3D1C205844630060B820 /* StringDialogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D03205844610060B820 /* StringDialogs.swift */; };
+		763B3D1D205844630060B820 /* LastBillBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D04205844620060B820 /* LastBillBalance.swift */; };
+		763B3D1E205844630060B820 /* MetodoPagoBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D05205844620060B820 /* MetodoPagoBean.swift */; };
+		763B3D1F205844630060B820 /* AddOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D06205844620060B820 /* AddOn.swift */; };
+		763B3D20205844630060B820 /* RestFaultElementBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D07205844620060B820 /* RestFaultElementBean.swift */; };
+		763B3D21205844630060B820 /* ResultBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D08205844620060B820 /* ResultBean.swift */; };
+		763B3D22205844630060B820 /* NewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D09205844620060B820 /* NewCard.swift */; };
+		763B3D23205844630060B820 /* ResultLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D0A205844620060B820 /* ResultLogin.swift */; };
+		763B3D24205844630060B820 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D0B205844620060B820 /* String.swift */; };
+		763B3D25205844630060B820 /* ClientData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D0C205844620060B820 /* ClientData.swift */; };
+		763B3D26205844630060B820 /* EncryptedLoginBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D0D205844620060B820 /* EncryptedLoginBean.swift */; };
+		763B3D27205844630060B820 /* NameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D0E205844620060B820 /* NameData.swift */; };
+		763B3D33205844C60060B820 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D2E205844C50060B820 /* Validator.swift */; };
+		763B3D34205844C60060B820 /* TextFieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D2F205844C50060B820 /* TextFieldValidator.swift */; };
+		763B3D35205844C60060B820 /* ViewGroupValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D30205844C60060B820 /* ViewGroupValidator.swift */; };
+		763B3D36205844C60060B820 /* FormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D31205844C60060B820 /* FormValidator.swift */; };
+		763B3D37205844C60060B820 /* SegmentedControlValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D32205844C60060B820 /* SegmentedControlValidator.swift */; };
+		763B3D43205844E20060B820 /* ConnectionUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D38205844E10060B820 /* ConnectionUtils.swift */; };
+		763B3D44205844E20060B820 /* MessageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D39205844E10060B820 /* MessageUtils.swift */; };
+		763B3D45205844E20060B820 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D3A205844E10060B820 /* ViewUtils.swift */; };
+		763B3D46205844E20060B820 /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D3B205844E10060B820 /* Security.swift */; };
+		763B3D47205844E20060B820 /* CreditCardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D3C205844E20060B820 /* CreditCardUtils.swift */; };
+		763B3D48205844E20060B820 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D3D205844E20060B820 /* ColorUtils.swift */; };
+		763B3D49205844E20060B820 /* ViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D3E205844E20060B820 /* ViewControllerUtils.swift */; };
+		763B3D4A205844E20060B820 /* AlertDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D3F205844E20060B820 /* AlertDialog.swift */; };
+		763B3D4B205844E20060B820 /* IconTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D40205844E20060B820 /* IconTextField.swift */; };
+		763B3D4C205844E20060B820 /* DeviceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D41205844E20060B820 /* DeviceUtils.swift */; };
+		763B3D4D205844E20060B820 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D42205844E20060B820 /* DateUtils.swift */; };
+		763B3D53205844FA0060B820 /* PaymentRegisteredCardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D4E205844FA0060B820 /* PaymentRegisteredCardResponse.swift */; };
+		763B3D54205844FA0060B820 /* GetBillsBRMResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D4F205844FA0060B820 /* GetBillsBRMResponse.swift */; };
+		763B3D55205844FA0060B820 /* RegisteredCardsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D50205844FA0060B820 /* RegisteredCardsResponse.swift */; };
+		763B3D56205844FA0060B820 /* RegisterCardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D51205844FA0060B820 /* RegisterCardResponse.swift */; };
+		763B3D57205844FA0060B820 /* CheckBalanceBRMResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D52205844FA0060B820 /* CheckBalanceBRMResponse.swift */; };
+		763B3D5E205845070060B820 /* RegisteredCardsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D58205845070060B820 /* RegisteredCardsRequest.swift */; };
+		763B3D5F205845070060B820 /* PaymentRegisteredCardRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D59205845070060B820 /* PaymentRegisteredCardRequest.swift */; };
+		763B3D60205845070060B820 /* RegisterCardRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D5A205845070060B820 /* RegisterCardRequest.swift */; };
+		763B3D61205845070060B820 /* CheckBalanceBRMRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D5B205845070060B820 /* CheckBalanceBRMRequest.swift */; };
+		763B3D62205845070060B820 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D5C205845070060B820 /* LoginRequest.swift */; };
+		763B3D63205845070060B820 /* GetBillsBRMRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D5D205845070060B820 /* GetBillsBRMRequest.swift */; };
+		763B3D682058451E0060B820 /* CardsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D642058451E0060B820 /* CardsEnum.swift */; };
+		763B3D692058451E0060B820 /* PackagesType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D652058451E0060B820 /* PackagesType.swift */; };
+		763B3D6A2058451E0060B820 /* SyncStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D662058451E0060B820 /* SyncStatus.swift */; };
+		763B3D6B2058451E0060B820 /* KeysEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D672058451E0060B820 /* KeysEnum.swift */; };
+		763B3D6F205845480060B820 /* ServiceAddOnDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D6C205845470060B820 /* ServiceAddOnDataSource.swift */; };
+		763B3D70205845480060B820 /* CardsCarruselDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D6D205845470060B820 /* CardsCarruselDataSource.swift */; };
+		763B3D71205845480060B820 /* CardsCarruselDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D6E205845480060B820 /* CardsCarruselDelegate.swift */; };
+		763B3D82205845630060B820 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D72205845610060B820 /* PopUpViewController.swift */; };
+		763B3D83205845630060B820 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D73205845610060B820 /* BaseViewController.swift */; };
+		763B3D84205845630060B820 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D74205845610060B820 /* Strings.swift */; };
+		763B3D85205845630060B820 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D75205845610060B820 /* Dictionary.swift */; };
+		763B3D86205845630060B820 /* Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D76205845610060B820 /* Definitions.swift */; };
+		763B3D87205845630060B820 /* BaseRealmRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D77205845610060B820 /* BaseRealmRequest.swift */; };
+		763B3D88205845630060B820 /* BaseEstrategiaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D78205845610060B820 /* BaseEstrategiaPresenter.swift */; };
+		763B3D89205845630060B820 /* BaseRetrofitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D79205845620060B820 /* BaseRetrofitManager.swift */; };
+		763B3D8A205845630060B820 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D7A205845620060B820 /* BasePresenter.swift */; };
+		763B3D8B205845630060B820 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D7B205845620060B820 /* BaseNavigationViewController.swift */; };
+		763B3D8C205845630060B820 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D7C205845620060B820 /* BaseTabBarViewController.swift */; };
+		763B3D8D205845630060B820 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D7D205845620060B820 /* BaseRequest.swift */; };
+		763B3D8E205845630060B820 /* RetrofitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D7E205845620060B820 /* RetrofitManager.swift */; };
+		763B3D8F205845630060B820 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D7F205845620060B820 /* BaseResponse.swift */; };
+		763B3D90205845630060B820 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D80205845620060B820 /* Colors.swift */; };
+		763B3D91205845630060B820 /* BaseEstrategiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D81205845630060B820 /* BaseEstrategiaViewController.swift */; };
+		763B3D97205847A20060B820 /* CommonCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 763B3D92205847A20060B820 /* CommonCryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		763B3D98205847A20060B820 /* iCarousel.h in Headers */ = {isa = PBXBuildFile; fileRef = 763B3D93205847A20060B820 /* iCarousel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		763B3D99205847A20060B820 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 763B3D94205847A20060B820 /* iCarousel.m */; };
+		763B3D9A205847A20060B820 /* CommonDigest.h in Headers */ = {isa = PBXBuildFile; fileRef = 763B3D95205847A20060B820 /* CommonDigest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		763B3D9B205847A20060B820 /* CommonCryptoError.h in Headers */ = {isa = PBXBuildFile; fileRef = 763B3D96205847A20060B820 /* CommonCryptoError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		763B3DA820584A300060B820 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763B3D9C20584A2E0060B820 /* CoreGraphics.framework */; };
+		763B3DA920584A300060B820 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763B3D9D20584A2F0060B820 /* UIKit.framework */; };
+		763B3DAA20584A300060B820 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763B3D9E20584A2F0060B820 /* MobileCoreServices.framework */; };
+		763B3DAB20584A300060B820 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763B3D9F20584A2F0060B820 /* AudioToolbox.framework */; };
+		763B3DAC20584A300060B820 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763B3DA020584A2F0060B820 /* AVFoundation.framework */; };
+		763B3DAD20584A300060B820 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763B3DA120584A2F0060B820 /* CoreMedia.framework */; };
+		763B3DAE20584A300060B820 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763B3DA220584A2F0060B820 /* CoreVideo.framework */; };
+		763B3DAF20584A300060B820 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763B3DA320584A300060B820 /* Foundation.framework */; };
+		763B3DB020584A300060B820 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763B3DA420584A300060B820 /* OpenGLES.framework */; };
+		763B3DB120584A300060B820 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763B3DA520584A300060B820 /* QuartzCore.framework */; };
+		763B3DB220584A300060B820 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763B3DA620584A300060B820 /* Accelerate.framework */; };
+		763B3DB320584A300060B820 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763B3DA720584A300060B820 /* Security.framework */; };
+		763B3DCE205854B40060B820 /* CardIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 763B3DC1205854930060B820 /* CardIO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		763B3DCF205854B40060B820 /* CardIOCreditCardInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 763B3DC2205854930060B820 /* CardIOCreditCardInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		763B3DD0205854B40060B820 /* CardIODetectionMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 763B3DC3205854930060B820 /* CardIODetectionMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		763B3DD1205854B40060B820 /* CardIOPaymentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 763B3DC4205854930060B820 /* CardIOPaymentViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		763B3DD2205854B40060B820 /* CardIOPaymentViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 763B3DC5205854930060B820 /* CardIOPaymentViewControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		763B3DD3205854B40060B820 /* CardIOUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 763B3DC6205854930060B820 /* CardIOUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		763B3DD4205854B40060B820 /* CardIOView.h in Headers */ = {isa = PBXBuildFile; fileRef = 763B3DC7205854930060B820 /* CardIOView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		763B3DD5205854B40060B820 /* CardIOViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 763B3DC8205854930060B820 /* CardIOViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22ECE9E3D0D1CE90E7743472 /* Pods_payment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_payment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		289BB71EA7DA5511F05E7DB1 /* Pods-payment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-payment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-payment/Pods-payment.debug.xcconfig"; sourceTree = "<group>"; };
+		763B3C3E205755BB0060B820 /* payment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = payment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		763B3C41205755BB0060B820 /* payment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = payment.h; sourceTree = "<group>"; };
+		763B3C42205755BB0060B820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		763B3C4D2057A08D0060B820 /* ItemTypeCardCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemTypeCardCollectionReusableView.xib; sourceTree = "<group>"; };
+		763B3C502057A08D0060B820 /* ItemPackageCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemPackageCollectionReusableView.xib; sourceTree = "<group>"; };
+		763B3C542057A08E0060B820 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		763B3CB1205842EA0060B820 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ItemAddCardCollectionReusableView.xib; sourceTree = "<group>"; };
+		763B3CB42058432A0060B820 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Views.storyboard; sourceTree = "<group>"; };
+		763B3CDB205844100060B820 /* AditionalServiceCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AditionalServiceCollectionReusableView.swift; path = View/Cell/AditionalServiceCollectionReusableView.swift; sourceTree = SOURCE_ROOT; };
+		763B3CDC205844100060B820 /* ItemPagoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemPagoTableViewCell.swift; path = View/Cell/ItemPagoTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		763B3CDD205844100060B820 /* DescriptionPackageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DescriptionPackageTableViewCell.swift; path = View/Cell/DescriptionPackageTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		763B3CDE205844100060B820 /* ItemAddCardCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemAddCardCollectionReusableView.swift; path = View/Cell/ItemAddCardCollectionReusableView.swift; sourceTree = SOURCE_ROOT; };
+		763B3CDF205844100060B820 /* ItemPackageCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemPackageCollectionReusableView.swift; path = View/Cell/ItemPackageCollectionReusableView.swift; sourceTree = SOURCE_ROOT; };
+		763B3CE0205844100060B820 /* PackageTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PackageTypeTableViewCell.swift; path = View/Cell/PackageTypeTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		763B3CE1205844100060B820 /* ItemTypeCardCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemTypeCardCollectionReusableView.swift; path = View/Cell/ItemTypeCardCollectionReusableView.swift; sourceTree = SOURCE_ROOT; };
+		763B3CE92058441F0060B820 /* AddNewCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddNewCardViewController.swift; path = View/AddNewCardViewController.swift; sourceTree = SOURCE_ROOT; };
+		763B3CEA2058441F0060B820 /* PayServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PayServiceViewController.swift; path = View/PayServiceViewController.swift; sourceTree = SOURCE_ROOT; };
+		763B3CEE2058443E0060B820 /* ControllerResultDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControllerResultDelegate.swift; path = Presenter/Delegate/ControllerResultDelegate.swift; sourceTree = SOURCE_ROOT; };
+		763B3CF02058444A0060B820 /* PayServicePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PayServicePresenter.swift; path = Presenter/PayServicePresenter.swift; sourceTree = SOURCE_ROOT; };
+		763B3CF12058444A0060B820 /* GetBillsBRMPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetBillsBRMPresenter.swift; path = Presenter/GetBillsBRMPresenter.swift; sourceTree = SOURCE_ROOT; };
+		763B3CF22058444A0060B820 /* AddNewCardPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddNewCardPresenter.swift; path = Presenter/AddNewCardPresenter.swift; sourceTree = SOURCE_ROOT; };
+		763B3CF6205844610060B820 /* AdditionalServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdditionalServices.swift; path = Model/AdditionalServices.swift; sourceTree = SOURCE_ROOT; };
+		763B3CF7205844610060B820 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = Model/DataManager.swift; sourceTree = SOURCE_ROOT; };
+		763B3CF8205844610060B820 /* Terms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Terms.swift; path = Model/Terms.swift; sourceTree = SOURCE_ROOT; };
+		763B3CF9205844610060B820 /* BillingInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BillingInfo.swift; path = Model/BillingInfo.swift; sourceTree = SOURCE_ROOT; };
+		763B3CFA205844610060B820 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = SOURCE_ROOT; };
+		763B3CFB205844610060B820 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Model/Response.swift; sourceTree = SOURCE_ROOT; };
+		763B3CFC205844610060B820 /* UserPassIp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserPassIp.swift; path = Model/UserPassIp.swift; sourceTree = SOURCE_ROOT; };
+		763B3CFD205844610060B820 /* Information.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Information.swift; path = Model/Information.swift; sourceTree = SOURCE_ROOT; };
+		763B3CFE205844610060B820 /* AddressComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddressComponent.swift; path = Model/AddressComponent.swift; sourceTree = SOURCE_ROOT; };
+		763B3CFF205844610060B820 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Model/Card.swift; sourceTree = SOURCE_ROOT; };
+		763B3D00205844610060B820 /* Addons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Addons.swift; path = Model/Addons.swift; sourceTree = SOURCE_ROOT; };
+		763B3D01205844610060B820 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Model/Result.swift; sourceTree = SOURCE_ROOT; };
+		763B3D02205844610060B820 /* Statements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Statements.swift; path = Model/Statements.swift; sourceTree = SOURCE_ROOT; };
+		763B3D03205844610060B820 /* StringDialogs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringDialogs.swift; path = Model/StringDialogs.swift; sourceTree = SOURCE_ROOT; };
+		763B3D04205844620060B820 /* LastBillBalance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LastBillBalance.swift; path = Model/LastBillBalance.swift; sourceTree = SOURCE_ROOT; };
+		763B3D05205844620060B820 /* MetodoPagoBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MetodoPagoBean.swift; path = Model/MetodoPagoBean.swift; sourceTree = SOURCE_ROOT; };
+		763B3D06205844620060B820 /* AddOn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddOn.swift; path = Model/AddOn.swift; sourceTree = SOURCE_ROOT; };
+		763B3D07205844620060B820 /* RestFaultElementBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestFaultElementBean.swift; path = Model/RestFaultElementBean.swift; sourceTree = SOURCE_ROOT; };
+		763B3D08205844620060B820 /* ResultBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultBean.swift; path = Model/ResultBean.swift; sourceTree = SOURCE_ROOT; };
+		763B3D09205844620060B820 /* NewCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewCard.swift; path = Model/NewCard.swift; sourceTree = SOURCE_ROOT; };
+		763B3D0A205844620060B820 /* ResultLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultLogin.swift; path = Model/ResultLogin.swift; sourceTree = SOURCE_ROOT; };
+		763B3D0B205844620060B820 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = String.swift; path = Model/String.swift; sourceTree = SOURCE_ROOT; };
+		763B3D0C205844620060B820 /* ClientData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClientData.swift; path = Model/ClientData.swift; sourceTree = SOURCE_ROOT; };
+		763B3D0D205844620060B820 /* EncryptedLoginBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EncryptedLoginBean.swift; path = Model/EncryptedLoginBean.swift; sourceTree = SOURCE_ROOT; };
+		763B3D0E205844620060B820 /* NameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NameData.swift; path = Model/NameData.swift; sourceTree = SOURCE_ROOT; };
+		763B3D2E205844C50060B820 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Validator.swift; path = Base/Utils/FormValidator/Validator.swift; sourceTree = SOURCE_ROOT; };
+		763B3D2F205844C50060B820 /* TextFieldValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextFieldValidator.swift; path = Base/Utils/FormValidator/TextFieldValidator.swift; sourceTree = SOURCE_ROOT; };
+		763B3D30205844C60060B820 /* ViewGroupValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewGroupValidator.swift; path = Base/Utils/FormValidator/ViewGroupValidator.swift; sourceTree = SOURCE_ROOT; };
+		763B3D31205844C60060B820 /* FormValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormValidator.swift; path = Base/Utils/FormValidator/FormValidator.swift; sourceTree = SOURCE_ROOT; };
+		763B3D32205844C60060B820 /* SegmentedControlValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SegmentedControlValidator.swift; path = Base/Utils/FormValidator/SegmentedControlValidator.swift; sourceTree = SOURCE_ROOT; };
+		763B3D38205844E10060B820 /* ConnectionUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConnectionUtils.swift; path = Base/Utils/ConnectionUtils.swift; sourceTree = SOURCE_ROOT; };
+		763B3D39205844E10060B820 /* MessageUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageUtils.swift; path = Base/Utils/MessageUtils.swift; sourceTree = SOURCE_ROOT; };
+		763B3D3A205844E10060B820 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewUtils.swift; path = Base/Utils/ViewUtils.swift; sourceTree = SOURCE_ROOT; };
+		763B3D3B205844E10060B820 /* Security.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Security.swift; path = Base/Utils/Security.swift; sourceTree = SOURCE_ROOT; };
+		763B3D3C205844E20060B820 /* CreditCardUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditCardUtils.swift; path = Base/Utils/CreditCardUtils.swift; sourceTree = SOURCE_ROOT; };
+		763B3D3D205844E20060B820 /* ColorUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorUtils.swift; path = Base/Utils/ColorUtils.swift; sourceTree = SOURCE_ROOT; };
+		763B3D3E205844E20060B820 /* ViewControllerUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerUtils.swift; path = Base/Utils/ViewControllerUtils.swift; sourceTree = SOURCE_ROOT; };
+		763B3D3F205844E20060B820 /* AlertDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertDialog.swift; path = Base/Utils/AlertDialog.swift; sourceTree = SOURCE_ROOT; };
+		763B3D40205844E20060B820 /* IconTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconTextField.swift; path = Base/Utils/IconTextField.swift; sourceTree = SOURCE_ROOT; };
+		763B3D41205844E20060B820 /* DeviceUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceUtils.swift; path = Base/Utils/DeviceUtils.swift; sourceTree = SOURCE_ROOT; };
+		763B3D42205844E20060B820 /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateUtils.swift; path = Base/Utils/DateUtils.swift; sourceTree = SOURCE_ROOT; };
+		763B3D4E205844FA0060B820 /* PaymentRegisteredCardResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PaymentRegisteredCardResponse.swift; path = Base/Response/PaymentRegisteredCardResponse.swift; sourceTree = SOURCE_ROOT; };
+		763B3D4F205844FA0060B820 /* GetBillsBRMResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetBillsBRMResponse.swift; path = Base/Response/GetBillsBRMResponse.swift; sourceTree = SOURCE_ROOT; };
+		763B3D50205844FA0060B820 /* RegisteredCardsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisteredCardsResponse.swift; path = Base/Response/RegisteredCardsResponse.swift; sourceTree = SOURCE_ROOT; };
+		763B3D51205844FA0060B820 /* RegisterCardResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterCardResponse.swift; path = Base/Response/RegisterCardResponse.swift; sourceTree = SOURCE_ROOT; };
+		763B3D52205844FA0060B820 /* CheckBalanceBRMResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckBalanceBRMResponse.swift; path = Base/Response/CheckBalanceBRMResponse.swift; sourceTree = SOURCE_ROOT; };
+		763B3D58205845070060B820 /* RegisteredCardsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisteredCardsRequest.swift; path = Base/Request/RegisteredCardsRequest.swift; sourceTree = SOURCE_ROOT; };
+		763B3D59205845070060B820 /* PaymentRegisteredCardRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PaymentRegisteredCardRequest.swift; path = Base/Request/PaymentRegisteredCardRequest.swift; sourceTree = SOURCE_ROOT; };
+		763B3D5A205845070060B820 /* RegisterCardRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterCardRequest.swift; path = Base/Request/RegisterCardRequest.swift; sourceTree = SOURCE_ROOT; };
+		763B3D5B205845070060B820 /* CheckBalanceBRMRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckBalanceBRMRequest.swift; path = Base/Request/CheckBalanceBRMRequest.swift; sourceTree = SOURCE_ROOT; };
+		763B3D5C205845070060B820 /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginRequest.swift; path = Base/Request/LoginRequest.swift; sourceTree = SOURCE_ROOT; };
+		763B3D5D205845070060B820 /* GetBillsBRMRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetBillsBRMRequest.swift; path = Base/Request/GetBillsBRMRequest.swift; sourceTree = SOURCE_ROOT; };
+		763B3D642058451E0060B820 /* CardsEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardsEnum.swift; path = Base/Enums/CardsEnum.swift; sourceTree = SOURCE_ROOT; };
+		763B3D652058451E0060B820 /* PackagesType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PackagesType.swift; path = Base/Enums/PackagesType.swift; sourceTree = SOURCE_ROOT; };
+		763B3D662058451E0060B820 /* SyncStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SyncStatus.swift; path = Base/Enums/SyncStatus.swift; sourceTree = SOURCE_ROOT; };
+		763B3D672058451E0060B820 /* KeysEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeysEnum.swift; path = Base/Enums/KeysEnum.swift; sourceTree = SOURCE_ROOT; };
+		763B3D6C205845470060B820 /* ServiceAddOnDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceAddOnDataSource.swift; path = Base/Data/ServiceAddOnDataSource.swift; sourceTree = SOURCE_ROOT; };
+		763B3D6D205845470060B820 /* CardsCarruselDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardsCarruselDataSource.swift; path = Base/Data/CardsCarruselDataSource.swift; sourceTree = SOURCE_ROOT; };
+		763B3D6E205845480060B820 /* CardsCarruselDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardsCarruselDelegate.swift; path = Base/Data/CardsCarruselDelegate.swift; sourceTree = SOURCE_ROOT; };
+		763B3D72205845610060B820 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopUpViewController.swift; path = Base/PopUpViewController.swift; sourceTree = SOURCE_ROOT; };
+		763B3D73205845610060B820 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Base/BaseViewController.swift; sourceTree = SOURCE_ROOT; };
+		763B3D74205845610060B820 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Strings.swift; path = Base/Strings.swift; sourceTree = SOURCE_ROOT; };
+		763B3D75205845610060B820 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dictionary.swift; path = Base/Dictionary.swift; sourceTree = SOURCE_ROOT; };
+		763B3D76205845610060B820 /* Definitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Definitions.swift; path = Base/Definitions.swift; sourceTree = SOURCE_ROOT; };
+		763B3D77205845610060B820 /* BaseRealmRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseRealmRequest.swift; path = Base/BaseRealmRequest.swift; sourceTree = SOURCE_ROOT; };
+		763B3D78205845610060B820 /* BaseEstrategiaPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseEstrategiaPresenter.swift; path = Base/BaseEstrategiaPresenter.swift; sourceTree = SOURCE_ROOT; };
+		763B3D79205845620060B820 /* BaseRetrofitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseRetrofitManager.swift; path = Base/BaseRetrofitManager.swift; sourceTree = SOURCE_ROOT; };
+		763B3D7A205845620060B820 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasePresenter.swift; path = Base/BasePresenter.swift; sourceTree = SOURCE_ROOT; };
+		763B3D7B205845620060B820 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseNavigationViewController.swift; path = Base/BaseNavigationViewController.swift; sourceTree = SOURCE_ROOT; };
+		763B3D7C205845620060B820 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseTabBarViewController.swift; path = Base/BaseTabBarViewController.swift; sourceTree = SOURCE_ROOT; };
+		763B3D7D205845620060B820 /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseRequest.swift; path = Base/BaseRequest.swift; sourceTree = SOURCE_ROOT; };
+		763B3D7E205845620060B820 /* RetrofitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RetrofitManager.swift; path = Base/RetrofitManager.swift; sourceTree = SOURCE_ROOT; };
+		763B3D7F205845620060B820 /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseResponse.swift; path = Base/BaseResponse.swift; sourceTree = SOURCE_ROOT; };
+		763B3D80205845620060B820 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = Base/Colors.swift; sourceTree = SOURCE_ROOT; };
+		763B3D81205845630060B820 /* BaseEstrategiaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseEstrategiaViewController.swift; path = Base/BaseEstrategiaViewController.swift; sourceTree = SOURCE_ROOT; };
+		763B3D92205847A20060B820 /* CommonCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonCryptor.h; sourceTree = "<group>"; };
+		763B3D93205847A20060B820 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		763B3D94205847A20060B820 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		763B3D95205847A20060B820 /* CommonDigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDigest.h; sourceTree = "<group>"; };
+		763B3D96205847A20060B820 /* CommonCryptoError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonCryptoError.h; sourceTree = "<group>"; };
+		763B3D9C20584A2E0060B820 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		763B3D9D20584A2F0060B820 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		763B3D9E20584A2F0060B820 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		763B3D9F20584A2F0060B820 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		763B3DA020584A2F0060B820 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		763B3DA120584A2F0060B820 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		763B3DA220584A2F0060B820 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		763B3DA320584A300060B820 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		763B3DA420584A300060B820 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		763B3DA520584A300060B820 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		763B3DA620584A300060B820 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		763B3DA720584A300060B820 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		763B3DC1205854930060B820 /* CardIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CardIO.h; path = CardIO/CardIO.h; sourceTree = "<group>"; };
+		763B3DC2205854930060B820 /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CardIOCreditCardInfo.h; path = CardIO/CardIOCreditCardInfo.h; sourceTree = "<group>"; };
+		763B3DC3205854930060B820 /* CardIODetectionMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CardIODetectionMode.h; path = CardIO/CardIODetectionMode.h; sourceTree = "<group>"; };
+		763B3DC4205854930060B820 /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CardIOPaymentViewController.h; path = CardIO/CardIOPaymentViewController.h; sourceTree = "<group>"; };
+		763B3DC5205854930060B820 /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CardIOPaymentViewControllerDelegate.h; path = CardIO/CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
+		763B3DC6205854930060B820 /* CardIOUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CardIOUtilities.h; path = CardIO/CardIOUtilities.h; sourceTree = "<group>"; };
+		763B3DC7205854930060B820 /* CardIOView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CardIOView.h; path = CardIO/CardIOView.h; sourceTree = "<group>"; };
+		763B3DC8205854930060B820 /* CardIOViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CardIOViewDelegate.h; path = CardIO/CardIOViewDelegate.h; sourceTree = "<group>"; };
+		763B3DC9205854930060B820 /* libCardIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCardIO.a; path = CardIO/libCardIO.a; sourceTree = "<group>"; };
+		763B3DCA205854930060B820 /* libopencv_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_core.a; path = CardIO/libopencv_core.a; sourceTree = "<group>"; };
+		763B3DCB205854930060B820 /* libopencv_imgproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_imgproc.a; path = CardIO/libopencv_imgproc.a; sourceTree = "<group>"; };
+		DAF4175D82C01D84C2AFD17D /* Pods-payment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-payment.release.xcconfig"; path = "Pods/Target Support Files/Pods-payment/Pods-payment.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		763B3C3A205755BB0060B820 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				763B3DA820584A300060B820 /* CoreGraphics.framework in Frameworks */,
+				763B3DA920584A300060B820 /* UIKit.framework in Frameworks */,
+				763B3DAA20584A300060B820 /* MobileCoreServices.framework in Frameworks */,
+				763B3DAB20584A300060B820 /* AudioToolbox.framework in Frameworks */,
+				763B3DAC20584A300060B820 /* AVFoundation.framework in Frameworks */,
+				763B3DAD20584A300060B820 /* CoreMedia.framework in Frameworks */,
+				763B3DAE20584A300060B820 /* CoreVideo.framework in Frameworks */,
+				763B3DAF20584A300060B820 /* Foundation.framework in Frameworks */,
+				763B3DB020584A300060B820 /* OpenGLES.framework in Frameworks */,
+				763B3DB120584A300060B820 /* QuartzCore.framework in Frameworks */,
+				763B3DB220584A300060B820 /* Accelerate.framework in Frameworks */,
+				763B3DB320584A300060B820 /* Security.framework in Frameworks */,
+				6AB9372B7C06F41AB6B765B8 /* Pods_payment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E4160EF5E582A7019095371 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				289BB71EA7DA5511F05E7DB1 /* Pods-payment.debug.xcconfig */,
+				DAF4175D82C01D84C2AFD17D /* Pods-payment.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		763B3C34205755BB0060B820 = {
+			isa = PBXGroup;
+			children = (
+				763B3C40205755BB0060B820 /* payment */,
+				763B3C3F205755BB0060B820 /* Products */,
+				5E4160EF5E582A7019095371 /* Pods */,
+				F5A00A10071FF8B847C8A209 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		763B3C3F205755BB0060B820 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				763B3C3E205755BB0060B820 /* payment.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		763B3C40205755BB0060B820 /* payment */ = {
+			isa = PBXGroup;
+			children = (
+				763B3D96205847A20060B820 /* CommonCryptoError.h */,
+				763B3D92205847A20060B820 /* CommonCryptor.h */,
+				763B3D95205847A20060B820 /* CommonDigest.h */,
+				763B3D93205847A20060B820 /* iCarousel.h */,
+				763B3D94205847A20060B820 /* iCarousel.m */,
+				763B3CD9205843F00060B820 /* Base */,
+				763B3CD8205843EA0060B820 /* Model */,
+				763B3CD7205843E10060B820 /* Presenter */,
+				763B3CD62058438E0060B820 /* View */,
+				763B3CB2205842EA0060B820 /* ItemAddCardCollectionReusableView.xib */,
+				763B3C502057A08D0060B820 /* ItemPackageCollectionReusableView.xib */,
+				763B3C4D2057A08D0060B820 /* ItemTypeCardCollectionReusableView.xib */,
+				763B3C542057A08E0060B820 /* Media.xcassets */,
+				763B3CB52058432A0060B820 /* Views.storyboard */,
+				763B3C41205755BB0060B820 /* payment.h */,
+				763B3C42205755BB0060B820 /* Info.plist */,
+			);
+			path = payment;
+			sourceTree = "<group>";
+		};
+		763B3CD62058438E0060B820 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				763B3CE92058441F0060B820 /* AddNewCardViewController.swift */,
+				763B3CEA2058441F0060B820 /* PayServiceViewController.swift */,
+				763B3CDA205843FC0060B820 /* cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		763B3CD7205843E10060B820 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				763B3CF22058444A0060B820 /* AddNewCardPresenter.swift */,
+				763B3CF12058444A0060B820 /* GetBillsBRMPresenter.swift */,
+				763B3CF02058444A0060B820 /* PayServicePresenter.swift */,
+				763B3CED2058442B0060B820 /* Delegate */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		763B3CD8205843EA0060B820 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				763B3CF6205844610060B820 /* AdditionalServices.swift */,
+				763B3D06205844620060B820 /* AddOn.swift */,
+				763B3D00205844610060B820 /* Addons.swift */,
+				763B3CFE205844610060B820 /* AddressComponent.swift */,
+				763B3CF9205844610060B820 /* BillingInfo.swift */,
+				763B3CFF205844610060B820 /* Card.swift */,
+				763B3D0C205844620060B820 /* ClientData.swift */,
+				763B3CF7205844610060B820 /* DataManager.swift */,
+				763B3D0D205844620060B820 /* EncryptedLoginBean.swift */,
+				763B3CFD205844610060B820 /* Information.swift */,
+				763B3D04205844620060B820 /* LastBillBalance.swift */,
+				763B3D05205844620060B820 /* MetodoPagoBean.swift */,
+				763B3D0E205844620060B820 /* NameData.swift */,
+				763B3D09205844620060B820 /* NewCard.swift */,
+				763B3CFB205844610060B820 /* Response.swift */,
+				763B3D07205844620060B820 /* RestFaultElementBean.swift */,
+				763B3D01205844610060B820 /* Result.swift */,
+				763B3D08205844620060B820 /* ResultBean.swift */,
+				763B3D0A205844620060B820 /* ResultLogin.swift */,
+				763B3D02205844610060B820 /* Statements.swift */,
+				763B3D0B205844620060B820 /* String.swift */,
+				763B3D03205844610060B820 /* StringDialogs.swift */,
+				763B3CF8205844610060B820 /* Terms.swift */,
+				763B3CFA205844610060B820 /* User.swift */,
+				763B3CFC205844610060B820 /* UserPassIp.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		763B3CD9205843F00060B820 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				763B3D78205845610060B820 /* BaseEstrategiaPresenter.swift */,
+				763B3D81205845630060B820 /* BaseEstrategiaViewController.swift */,
+				763B3D7B205845620060B820 /* BaseNavigationViewController.swift */,
+				763B3D7A205845620060B820 /* BasePresenter.swift */,
+				763B3D77205845610060B820 /* BaseRealmRequest.swift */,
+				763B3D7D205845620060B820 /* BaseRequest.swift */,
+				763B3D7F205845620060B820 /* BaseResponse.swift */,
+				763B3D79205845620060B820 /* BaseRetrofitManager.swift */,
+				763B3D7C205845620060B820 /* BaseTabBarViewController.swift */,
+				763B3D73205845610060B820 /* BaseViewController.swift */,
+				763B3D80205845620060B820 /* Colors.swift */,
+				763B3D76205845610060B820 /* Definitions.swift */,
+				763B3D75205845610060B820 /* Dictionary.swift */,
+				763B3D72205845610060B820 /* PopUpViewController.swift */,
+				763B3D7E205845620060B820 /* RetrofitManager.swift */,
+				763B3D74205845610060B820 /* Strings.swift */,
+				763B3D2C205844980060B820 /* data */,
+				763B3D2B2058448F0060B820 /* enums */,
+				763B3D2A205844890060B820 /* request */,
+				763B3D29205844810060B820 /* response */,
+				763B3D282058447A0060B820 /* utils */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		763B3CDA205843FC0060B820 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				763B3CDB205844100060B820 /* AditionalServiceCollectionReusableView.swift */,
+				763B3CDD205844100060B820 /* DescriptionPackageTableViewCell.swift */,
+				763B3CDE205844100060B820 /* ItemAddCardCollectionReusableView.swift */,
+				763B3CDF205844100060B820 /* ItemPackageCollectionReusableView.swift */,
+				763B3CDC205844100060B820 /* ItemPagoTableViewCell.swift */,
+				763B3CE1205844100060B820 /* ItemTypeCardCollectionReusableView.swift */,
+				763B3CE0205844100060B820 /* PackageTypeTableViewCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		763B3CED2058442B0060B820 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				763B3CEE2058443E0060B820 /* ControllerResultDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		763B3D282058447A0060B820 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				763B3D3F205844E20060B820 /* AlertDialog.swift */,
+				763B3D3D205844E20060B820 /* ColorUtils.swift */,
+				763B3D38205844E10060B820 /* ConnectionUtils.swift */,
+				763B3D3C205844E20060B820 /* CreditCardUtils.swift */,
+				763B3D42205844E20060B820 /* DateUtils.swift */,
+				763B3D41205844E20060B820 /* DeviceUtils.swift */,
+				763B3D40205844E20060B820 /* IconTextField.swift */,
+				763B3D39205844E10060B820 /* MessageUtils.swift */,
+				763B3D3B205844E10060B820 /* Security.swift */,
+				763B3D3E205844E20060B820 /* ViewControllerUtils.swift */,
+				763B3D3A205844E10060B820 /* ViewUtils.swift */,
+				763B3D2D205844A40060B820 /* formValidator */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		763B3D29205844810060B820 /* response */ = {
+			isa = PBXGroup;
+			children = (
+				763B3D52205844FA0060B820 /* CheckBalanceBRMResponse.swift */,
+				763B3D4F205844FA0060B820 /* GetBillsBRMResponse.swift */,
+				763B3D4E205844FA0060B820 /* PaymentRegisteredCardResponse.swift */,
+				763B3D51205844FA0060B820 /* RegisterCardResponse.swift */,
+				763B3D50205844FA0060B820 /* RegisteredCardsResponse.swift */,
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
+		763B3D2A205844890060B820 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				763B3D5B205845070060B820 /* CheckBalanceBRMRequest.swift */,
+				763B3D5D205845070060B820 /* GetBillsBRMRequest.swift */,
+				763B3D5C205845070060B820 /* LoginRequest.swift */,
+				763B3D59205845070060B820 /* PaymentRegisteredCardRequest.swift */,
+				763B3D5A205845070060B820 /* RegisterCardRequest.swift */,
+				763B3D58205845070060B820 /* RegisteredCardsRequest.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		763B3D2B2058448F0060B820 /* enums */ = {
+			isa = PBXGroup;
+			children = (
+				763B3D642058451E0060B820 /* CardsEnum.swift */,
+				763B3D672058451E0060B820 /* KeysEnum.swift */,
+				763B3D652058451E0060B820 /* PackagesType.swift */,
+				763B3D662058451E0060B820 /* SyncStatus.swift */,
+			);
+			path = enums;
+			sourceTree = "<group>";
+		};
+		763B3D2C205844980060B820 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				763B3D6D205845470060B820 /* CardsCarruselDataSource.swift */,
+				763B3D6E205845480060B820 /* CardsCarruselDelegate.swift */,
+				763B3D6C205845470060B820 /* ServiceAddOnDataSource.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		763B3D2D205844A40060B820 /* formValidator */ = {
+			isa = PBXGroup;
+			children = (
+				763B3D31205844C60060B820 /* FormValidator.swift */,
+				763B3D32205844C60060B820 /* SegmentedControlValidator.swift */,
+				763B3D2F205844C50060B820 /* TextFieldValidator.swift */,
+				763B3D2E205844C50060B820 /* Validator.swift */,
+				763B3D30205844C60060B820 /* ViewGroupValidator.swift */,
+			);
+			path = formValidator;
+			sourceTree = "<group>";
+		};
+		763B3DCC205854930060B820 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				763B3DC9205854930060B820 /* libCardIO.a */,
+				763B3DCA205854930060B820 /* libopencv_core.a */,
+				763B3DCB205854930060B820 /* libopencv_imgproc.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		763B3DCD205854930060B820 /* CardIO */ = {
+			isa = PBXGroup;
+			children = (
+				763B3DC1205854930060B820 /* CardIO.h */,
+				763B3DC2205854930060B820 /* CardIOCreditCardInfo.h */,
+				763B3DC3205854930060B820 /* CardIODetectionMode.h */,
+				763B3DC4205854930060B820 /* CardIOPaymentViewController.h */,
+				763B3DC5205854930060B820 /* CardIOPaymentViewControllerDelegate.h */,
+				763B3DC6205854930060B820 /* CardIOUtilities.h */,
+				763B3DC7205854930060B820 /* CardIOView.h */,
+				763B3DC8205854930060B820 /* CardIOViewDelegate.h */,
+				763B3DCC205854930060B820 /* Frameworks */,
+			);
+			name = CardIO;
+			path = Pods/CardIO;
+			sourceTree = "<group>";
+		};
+		F5A00A10071FF8B847C8A209 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				763B3DCD205854930060B820 /* CardIO */,
+				763B3DA620584A300060B820 /* Accelerate.framework */,
+				763B3D9F20584A2F0060B820 /* AudioToolbox.framework */,
+				763B3DA020584A2F0060B820 /* AVFoundation.framework */,
+				763B3D9C20584A2E0060B820 /* CoreGraphics.framework */,
+				763B3DA120584A2F0060B820 /* CoreMedia.framework */,
+				763B3DA220584A2F0060B820 /* CoreVideo.framework */,
+				763B3DA320584A300060B820 /* Foundation.framework */,
+				763B3D9E20584A2F0060B820 /* MobileCoreServices.framework */,
+				763B3DA420584A300060B820 /* OpenGLES.framework */,
+				763B3DA520584A300060B820 /* QuartzCore.framework */,
+				763B3DA720584A300060B820 /* Security.framework */,
+				763B3D9D20584A2F0060B820 /* UIKit.framework */,
+				22ECE9E3D0D1CE90E7743472 /* Pods_payment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		763B3C3B205755BB0060B820 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				763B3D98205847A20060B820 /* iCarousel.h in Headers */,
+				763B3D9A205847A20060B820 /* CommonDigest.h in Headers */,
+				763B3C43205755BB0060B820 /* payment.h in Headers */,
+				763B3D9B205847A20060B820 /* CommonCryptoError.h in Headers */,
+				763B3D97205847A20060B820 /* CommonCryptor.h in Headers */,
+				763B3DCE205854B40060B820 /* CardIO.h in Headers */,
+				763B3DCF205854B40060B820 /* CardIOCreditCardInfo.h in Headers */,
+				763B3DD0205854B40060B820 /* CardIODetectionMode.h in Headers */,
+				763B3DD1205854B40060B820 /* CardIOPaymentViewController.h in Headers */,
+				763B3DD2205854B40060B820 /* CardIOPaymentViewControllerDelegate.h in Headers */,
+				763B3DD3205854B40060B820 /* CardIOUtilities.h in Headers */,
+				763B3DD5205854B40060B820 /* CardIOViewDelegate.h in Headers */,
+				763B3DD4205854B40060B820 /* CardIOView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		763B3C3D205755BB0060B820 /* payment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 763B3C46205755BB0060B820 /* Build configuration list for PBXNativeTarget "payment" */;
+			buildPhases = (
+				2AD7CE8EF9B781E245FC9B25 /* [CP] Check Pods Manifest.lock */,
+				763B3C39205755BB0060B820 /* Sources */,
+				763B3C3A205755BB0060B820 /* Frameworks */,
+				763B3C3B205755BB0060B820 /* Headers */,
+				763B3C3C205755BB0060B820 /* Resources */,
+				942FE1468541559BC5BDDC4B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = payment;
+			productName = payment;
+			productReference = 763B3C3E205755BB0060B820 /* payment.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		763B3C35205755BB0060B820 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = reyhac;
+				TargetAttributes = {
+					763B3C3D205755BB0060B820 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					763B3C65205830330060B820 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 763B3C38205755BB0060B820 /* Build configuration list for PBXProject "payment" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 763B3C34205755BB0060B820;
+			productRefGroup = 763B3C3F205755BB0060B820 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				763B3C3D205755BB0060B820 /* payment */,
+				763B3C65205830330060B820 /* UniversalPayment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		763B3C3C205755BB0060B820 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				763B3CB32058432A0060B820 /* Views.storyboard in Resources */,
+				763B3C602057A08F0060B820 /* Media.xcassets in Resources */,
+				763B3C592057A08F0060B820 /* ItemTypeCardCollectionReusableView.xib in Resources */,
+				763B3CB0205842EA0060B820 /* ItemAddCardCollectionReusableView.xib in Resources */,
+				763B3C5C2057A08F0060B820 /* ItemPackageCollectionReusableView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AD7CE8EF9B781E245FC9B25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-payment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		763B3C69205830AD0060B820 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"payment\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"payment\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/payment.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/payment.framework/Modules/payment.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/payment.framework/Modules/payment.swiftmodule\"\nfi\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/payment.framework/payment\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/payment.framework/payment\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/payment.framework/payment\"\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/payment.framework\" \"${PROJECT_DIR}\"\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"";
+		};
+		942FE1468541559BC5BDDC4B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-payment/Pods-payment-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		763B3C39205755BB0060B820 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				763B3D6A2058451E0060B820 /* SyncStatus.swift in Sources */,
+				763B3D36205844C60060B820 /* FormValidator.swift in Sources */,
+				763B3D55205844FA0060B820 /* RegisteredCardsResponse.swift in Sources */,
+				763B3D692058451E0060B820 /* PackagesType.swift in Sources */,
+				763B3D61205845070060B820 /* CheckBalanceBRMRequest.swift in Sources */,
+				763B3D48205844E20060B820 /* ColorUtils.swift in Sources */,
+				763B3D54205844FA0060B820 /* GetBillsBRMResponse.swift in Sources */,
+				763B3D84205845630060B820 /* Strings.swift in Sources */,
+				763B3D21205844630060B820 /* ResultBean.swift in Sources */,
+				763B3D8F205845630060B820 /* BaseResponse.swift in Sources */,
+				763B3D17205844630060B820 /* AddressComponent.swift in Sources */,
+				763B3D49205844E20060B820 /* ViewControllerUtils.swift in Sources */,
+				763B3D37205844C60060B820 /* SegmentedControlValidator.swift in Sources */,
+				763B3D83205845630060B820 /* BaseViewController.swift in Sources */,
+				763B3D12205844630060B820 /* BillingInfo.swift in Sources */,
+				763B3CE2205844100060B820 /* AditionalServiceCollectionReusableView.swift in Sources */,
+				763B3D91205845630060B820 /* BaseEstrategiaViewController.swift in Sources */,
+				763B3D57205844FA0060B820 /* CheckBalanceBRMResponse.swift in Sources */,
+				763B3D33205844C60060B820 /* Validator.swift in Sources */,
+				763B3D11205844630060B820 /* Terms.swift in Sources */,
+				763B3D4C205844E20060B820 /* DeviceUtils.swift in Sources */,
+				763B3D62205845070060B820 /* LoginRequest.swift in Sources */,
+				763B3D10205844630060B820 /* DataManager.swift in Sources */,
+				763B3D85205845630060B820 /* Dictionary.swift in Sources */,
+				763B3D23205844630060B820 /* ResultLogin.swift in Sources */,
+				763B3CE4205844100060B820 /* DescriptionPackageTableViewCell.swift in Sources */,
+				763B3D1A205844630060B820 /* Result.swift in Sources */,
+				763B3D34205844C60060B820 /* TextFieldValidator.swift in Sources */,
+				763B3D14205844630060B820 /* Response.swift in Sources */,
+				763B3CEC205844200060B820 /* PayServiceViewController.swift in Sources */,
+				763B3CE5205844100060B820 /* ItemAddCardCollectionReusableView.swift in Sources */,
+				763B3D682058451E0060B820 /* CardsEnum.swift in Sources */,
+				763B3D0F205844630060B820 /* AdditionalServices.swift in Sources */,
+				763B3CE8205844100060B820 /* ItemTypeCardCollectionReusableView.swift in Sources */,
+				763B3D4B205844E20060B820 /* IconTextField.swift in Sources */,
+				763B3D26205844630060B820 /* EncryptedLoginBean.swift in Sources */,
+				763B3CF32058444A0060B820 /* PayServicePresenter.swift in Sources */,
+				763B3D22205844630060B820 /* NewCard.swift in Sources */,
+				763B3CF52058444A0060B820 /* AddNewCardPresenter.swift in Sources */,
+				763B3D63205845070060B820 /* GetBillsBRMRequest.swift in Sources */,
+				763B3D4A205844E20060B820 /* AlertDialog.swift in Sources */,
+				763B3D8B205845630060B820 /* BaseNavigationViewController.swift in Sources */,
+				763B3D47205844E20060B820 /* CreditCardUtils.swift in Sources */,
+				763B3CE3205844100060B820 /* ItemPagoTableViewCell.swift in Sources */,
+				763B3D35205844C60060B820 /* ViewGroupValidator.swift in Sources */,
+				763B3CEB205844200060B820 /* AddNewCardViewController.swift in Sources */,
+				763B3D4D205844E20060B820 /* DateUtils.swift in Sources */,
+				763B3D15205844630060B820 /* UserPassIp.swift in Sources */,
+				763B3D45205844E20060B820 /* ViewUtils.swift in Sources */,
+				763B3D46205844E20060B820 /* Security.swift in Sources */,
+				763B3D90205845630060B820 /* Colors.swift in Sources */,
+				763B3D1E205844630060B820 /* MetodoPagoBean.swift in Sources */,
+				763B3D19205844630060B820 /* Addons.swift in Sources */,
+				763B3D16205844630060B820 /* Information.swift in Sources */,
+				763B3D20205844630060B820 /* RestFaultElementBean.swift in Sources */,
+				763B3D56205844FA0060B820 /* RegisterCardResponse.swift in Sources */,
+				763B3D88205845630060B820 /* BaseEstrategiaPresenter.swift in Sources */,
+				763B3D53205844FA0060B820 /* PaymentRegisteredCardResponse.swift in Sources */,
+				763B3CF42058444A0060B820 /* GetBillsBRMPresenter.swift in Sources */,
+				763B3D18205844630060B820 /* Card.swift in Sources */,
+				763B3D1D205844630060B820 /* LastBillBalance.swift in Sources */,
+				763B3D6F205845480060B820 /* ServiceAddOnDataSource.swift in Sources */,
+				763B3D43205844E20060B820 /* ConnectionUtils.swift in Sources */,
+				763B3D13205844630060B820 /* User.swift in Sources */,
+				763B3CE7205844100060B820 /* PackageTypeTableViewCell.swift in Sources */,
+				763B3D60205845070060B820 /* RegisterCardRequest.swift in Sources */,
+				763B3D1C205844630060B820 /* StringDialogs.swift in Sources */,
+				763B3D1F205844630060B820 /* AddOn.swift in Sources */,
+				763B3D82205845630060B820 /* PopUpViewController.swift in Sources */,
+				763B3D27205844630060B820 /* NameData.swift in Sources */,
+				763B3D1B205844630060B820 /* Statements.swift in Sources */,
+				763B3D87205845630060B820 /* BaseRealmRequest.swift in Sources */,
+				763B3D25205844630060B820 /* ClientData.swift in Sources */,
+				763B3D71205845480060B820 /* CardsCarruselDelegate.swift in Sources */,
+				763B3D8C205845630060B820 /* BaseTabBarViewController.swift in Sources */,
+				763B3D5E205845070060B820 /* RegisteredCardsRequest.swift in Sources */,
+				763B3D5F205845070060B820 /* PaymentRegisteredCardRequest.swift in Sources */,
+				763B3D86205845630060B820 /* Definitions.swift in Sources */,
+				763B3D8E205845630060B820 /* RetrofitManager.swift in Sources */,
+				763B3D8A205845630060B820 /* BasePresenter.swift in Sources */,
+				763B3D89205845630060B820 /* BaseRetrofitManager.swift in Sources */,
+				763B3D24205844630060B820 /* String.swift in Sources */,
+				763B3CE6205844100060B820 /* ItemPackageCollectionReusableView.swift in Sources */,
+				763B3D99205847A20060B820 /* iCarousel.m in Sources */,
+				763B3D6B2058451E0060B820 /* KeysEnum.swift in Sources */,
+				763B3D8D205845630060B820 /* BaseRequest.swift in Sources */,
+				763B3CEF2058443E0060B820 /* ControllerResultDelegate.swift in Sources */,
+				763B3D70205845480060B820 /* CardsCarruselDataSource.swift in Sources */,
+				763B3D44205844E20060B820 /* MessageUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		763B3CB2205842EA0060B820 /* ItemAddCardCollectionReusableView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				763B3CB1205842EA0060B820 /* en */,
+			);
+			name = ItemAddCardCollectionReusableView.xib;
+			sourceTree = "<group>";
+		};
+		763B3CB52058432A0060B820 /* Views.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				763B3CB42058432A0060B820 /* en */,
+			);
+			name = Views.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		763B3C44205755BB0060B820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		763B3C45205755BB0060B820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		763B3C47205755BB0060B820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 289BB71EA7DA5511F05E7DB1 /* Pods-payment.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BC8K358E39;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = payment/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reyhac.payment;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		763B3C48205755BB0060B820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAF4175D82C01D84C2AFD17D /* Pods-payment.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BC8K358E39;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = payment/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reyhac.payment;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		763B3C67205830330060B820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BC8K358E39;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		763B3C68205830330060B820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BC8K358E39;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		763B3C38205755BB0060B820 /* Build configuration list for PBXProject "payment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				763B3C44205755BB0060B820 /* Debug */,
+				763B3C45205755BB0060B820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		763B3C46205755BB0060B820 /* Build configuration list for PBXNativeTarget "payment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				763B3C47205755BB0060B820 /* Debug */,
+				763B3C48205755BB0060B820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		763B3C66205830330060B820 /* Build configuration list for PBXAggregateTarget "UniversalPayment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				763B3C67205830330060B820 /* Debug */,
+				763B3C68205830330060B820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 763B3C35205755BB0060B820 /* Project object */;
+}
